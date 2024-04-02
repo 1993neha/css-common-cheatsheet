@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='styles.css' rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+    <div id="banner">
+        <h1>Website Design System</h1>
+    </div>
+  <div class="boxdisplay">
+    <div class="head">
+        <span>Heading Example</span>
+        <h1>This is a h1 heading</h1>
+        <h2>This is a h2 heading</h2>
+        <h3>This is a h3 heading</h3>
+        <h4>This is a h4 heading</h4>
+        <h5>This is a h5 heading</h5>
+        <h6>This is a h6 heading</h6>
+    </div>
+    <div id="box">
+      <div class="margin">Margin
+        <div class="border">Border
+          <div class="padding">Padding
+            <div class="content">Content  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="box-model">
+        <h2>CSS Box Model</h2>
+        <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content</td>
+            <td>The content area of an element. The area of the box that is outlined by the padding, border, and margin.</td>
+           
+          </tr>
+          <tr>
+            <td>Padding</td>
+            <td>The space between the content area and the border. The size of the padding is defined by the padding-top, padding-right, padding-bottom, and padding-left properties.</td>
+            
+          </tr>
+          <tr>
+            <td>Border</td>
+            <td>The area between the padding and the margin. The size of the border is defined by the border-top, border-right, border-bottom, and border-left properties.</td>
+            
+          </tr>
+          <tr>
+            <td>Margin</td>
+            <td>The space around the outside of the border. The size of the margin is defined by the margin-top, margin-right, margin-bottom, and margin-left properties.</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+
+    
+
+
+
+
+    <div class="container">
+      <h2>Position Property</h2>  
+      <table class="tdata">
+        <thead>
+          <tr class="thead">
+            <th>Position</th>
+            <th>Description</th>
+            <th>CSS Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Static</td>
+            <td>The default value. Elements render in the normal flow of the document.</td>
+            <td>.example-static { position: static; }</td>
+          </tr>
+          <tr>
+            <td>Relative</td>
+            <td>The element is positioned relative to its normal position, and can be offset using the <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties.</td>
+            <td>.example-relative { position: relative; top: 10px; left: 10px; }</td>
+          </tr>
+          <tr>
+            <td>Absolute</td>
+            <td>The element is positioned relative to the nearest positioned ancestor (or the document body, if no positioned ancestor exists). The element is removed from the normal document flow.</td>
+            
+            <td>.example-absolute { position: absolute; top: 20px; left: 20px; }</td>
+          </tr>
+          <tr>
+            <td>Sticky</td>
+            <td>The element is positioned relative to its normal position until a specified threshold is crossed (e.g., when the element reaches the top of the viewport), at which point it is treated as fixed.</td>
+            <td>.example-sticky { position: sticky; top: 30px; }</td>
+          </tr>
+          <tr>
+            <td>Fixed</td>
+            <td>The element is positioned relative to the viewport, and remains fixed in place as the page is scrolled.</td>
+            <td>.example-fixed { position: fixed; top: 40px; left: 40px; }</td>
+          </tr>
+        </tbody>
+      </table> 
+    </div>
+
+    <div class="display">
+        <h2>Display Property</h2>  
+        <table class="dtable">
+            <thead>
+                <tr class="thead">
+                  <th>Property</th>
+                  <th>Description</th>
+                  <th>CSS Example</th>
+                </tr>
+              </thead>
+            <tbody>
+              <tr>
+                <td>block</td>
+                <td>The element will display as a block-level element, taking up the full width of its container.</td>
+                <td>.container1 {
+                    display: block;
+                  }</td>
+              </tr>
+              <tr>
+                <td>inline</td>
+                <td>The element will display as an inline-level element, only taking up as much space as necessary.</td>
+                <td>.container2 {
+                    display: inline;
+                  }
+                  </td>
+              </tr>
+              <tr>
+                <td>inline-block</td>
+                <td>The element will display as an inline-level element, but with block-level properties like width and height.</td>
+                <td>.container3 {
+                    display: inline-block;
+                  }</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div class="color">
+        <h2>Colors Property</h2>  
+        <table class="Ctable">
+            <thead>
+                <tr class="thead">
+                  <th>Property</th>
+                  <th>Description</th>
+                  <th>CSS Example</th>
+                </tr>
+              </thead>
+            <tbody>
+              <tr>
+                <td>Name Keywords</td>
+                <td>Name keywords can be used to set color property values for elements in CSS.</td>
+                <td>h1 {
+                    color: red;
+                  }</td>
+              </tr>
+              <tr>
+                <td>rgb()</td>
+                <td>rgb() should be supplied with three values representing red, green, and blue. These values range can from 0 to 255.</td>
+                <td>.green {
+                    color: rgb(0, 255, 0);
+                  }
+                  </td>
+              </tr>
+              <tr>
+                <td>hsl() </td>
+                <td>This syntax contains three values: hue (the color value itself), saturation (intensity),
+                     and lightness.</td>
+                <td>.light-blue {
+                    background-color: hsl(200, 70%, 50%);  
+                  }</td>
+              </tr>
+              <tr>
+                <td>Hexadecimal Colors</td>
+                <td>Hexadecimal digits can represent sixteen different values using 0-9 and a-f.
+                    Hexadecimal colors are composed of 6 characters each group of two represents a 
+                    value between 0 and 255 for red, green, or blue.
+                </td>
+                <td>.red {
+                    color: #ff0000;
+                  }
+                  .short-blue {
+                    color: #00f;
+                  }</td>  
+              </tr>
+              <tr>
+                <td>Alpha Values</td>
+                <td>Alpha values determine the transparency of colors in CSS. Alpha values can be set 
+                    for both RGB and HSL colors by using rgba() and hsla() and providing a fourth value 
+                    representing alpha. </td>
+                <td>.midground {
+                    background-color: rgba(0, 255, 0, 0.5);
+                  }
+                  .foreground {
+                    background-color: hsla(34, 100%, 50%, 0.1);
+                  }
+                  .transparent {
+                    color: transparent;
+                  }</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    
+</body>
+</html>
